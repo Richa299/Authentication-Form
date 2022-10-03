@@ -42,10 +42,14 @@ body{
 }
 .login-title{
     margin-top: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 700;
 }
 .sign-up-title{
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
+    color: white;
     font-weight: 700;
 }
 .ashri{
@@ -89,6 +93,7 @@ body{
 border-radius: 15px 0px 0px 15px;
 border: 1px solid white;
 width: 5rem;
+color: white;
 font-size: 15px;
 background-color: darkslategrey;
 }
@@ -98,7 +103,7 @@ background-color: darkslategrey;
     font-size: 15px;
     margin-left: -6px;
     border: 1px solid white;
-    color: white;
+    color: black;
     background-color: yellowgreen;
 }
 .contain{
@@ -132,6 +137,7 @@ margin-top: -0.9rem;
      border-radius: 15px 0px 0px 15px;
      border: 1px solid white;
      width: 4rem;
+     color: white;
      font-size: 15px;
      background-color: darkslategrey;
      }
@@ -145,6 +151,7 @@ margin-top: -0.9rem;
     border-radius: 15px 0px 0px 15px;
     border: 1px solid white;
     width: 4rem;
+    color: white;
     font-size: 15px;
     background-color: darkslategrey;
     }
@@ -154,7 +161,7 @@ margin-top: -0.9rem;
         font-size: 15px;
         margin-left: -6px;
         border: 1px solid white;
-        color: white;
+        color: black;
         background-color: yellowgreen;
     }
   }
@@ -165,6 +172,7 @@ margin-top: -0.9rem;
      border-radius: 15px 0px 0px 15px;
      border: 1px solid white;
      width: 4rem;
+     color: white;
      font-size: 15px;
      background-color: darkslategrey;
      }
