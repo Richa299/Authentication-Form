@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="">
+        <img
+          src="./kisspng-lightweight-directory-access-protocol-computer-ico-authentication-protocol-5b3bc947429693.3441593615306448072728.png"
+          alt="" width="40" height="30" class="me-2 mb-1"><span class="brand-title">Ashri's Website</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll">
+          <li class="nav-item">
+            <a class="nav-link right-shift" aria-current="page" href="#">Home</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link right-shift" aria-current="page" href="#Signup-form">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link right-shift" aria-current="page" href="#login-form">Login</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+  </nav>
+
+  <!---------------------------------------------Header-------------------------------------------->
+
+  <div class="jumbotron">
+    <h1 class="ashri">Ashri's Website</h1>
+    <p class="lead">This is a website for all your tour needs. Pick any destination and we'll get everything arranged for you!</p>
+    <hr class="my-4">
+    <a class="btn btn-dark btn-lg" href="#" role="button">Learn more</a>
+  </div>
+
+ 
+
+  <!-- <div class="container"> -->
+    <!-------------------------------------------Sign Up Form------------------------------------------>
+    <div class="row col-md-12 contain" >
+      <div class="col-md-6 image-form col-sm-6">
+        <h2 id="welcome">Welcome Page</h2>
+        <p id="lorem">A few clicks away from better opportunities..</p>
+        <p id="lorem">Start for free and get exciting offers!!</p>
+      </div>
+    <form class="registration-form col-md-6" id="Signup-form">
+      <div class="buttonss">
+        <button type="button" onclick="signup_show()" id="button-toggle-sign">Signup</button>
+        <button type="button" onclick="login_show()" id="button-toggle-log">Login</button>
+      </div>
+      <h2 class="col-md-12 sign-up-title mt-4">Sign Up</h2>
+
+      <div class="alert alert-success alert-dismissible fade show col-md-8" role="alert" id="signup-success">
+       Sign Up successfully!
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true" class="cross">&times;</span>
+        </button>
+      </div>
+      <div class="alert alert-danger alert-dismissible fade show col-md-8" role="alert" id="signup-unsuccess">
+       Sign Up unsuccessful!
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="row mt-4" id="font-check">
+       
+        <div class="col-md-6 col-sm-6 col-6">
+          <!-- <label for="valid-first-name" class="form-label">First name</label> -->
+          <input type="text" class="form-control" id="first-name" value="" autocomplete="off" oninput="check_first_name()" placeholder="First Name">
+          <div class="valid-feedback" id="first-name-valid">
+            Looks good!
+          </div>
+          <div class="invalid-feedback" id="first-name-invalid">
+            Please enter a valid name.
+          </div>
+        </div>
+  
+  
+        <div class="col-md-6 col-sm-6 col-6">
+          <!-- <label for="valid-last-name" class="form-label">Last name</label> -->
+          <input type="text" class="form-control" id="last-name" value="" autocomplete="off" oninput="check_last_name()" placeholder="Last Name">
+          <div class="valid-feedback" id="last-name-valid">
+            Looks good!
+          </div>
+          <div class="invalid-feedback"  id="last-name-invalid">
+            Please enter a valid name.
+          </div>
+  
+  
+        </div>
+      </div>
+      
+
+      <div class="row mt-4" id="font-check">
+        <div class="col-md-6 col-sm-6 col-6" >
+          <!-- <label for="valid-email" class="form-label">Email</label> -->
+          <div class="input-group has-validation">
+            <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+          </div>
+            <input type="email" class="form-control" id="email" aria-describedby="inputGroupPrepend"
+              autocomplete="off" oninput="check_email()" placeholder="Email">
+            <div class="invalid-feedback"  id="email-invalid">
+              Please choose a username.
+            </div>
+            <div class="valid-feedback "  id="email-valid">
+              Looks good!
+            </div>
+  
+            
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-6">
+          <!-- <label for="valid-phone" class="form-label">Phone number</label> -->
+          <div class="input-group has-validation">
+            <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroupPrepend">+91</span>
+            </div>
+            <input type="text" class="form-control" id="phone-number" aria-describedby="inputGroupPrepend"
+              autocomplete="off" oninput="check_phone_number()" placeholder="Phone Number">
+            <div class="invalid-feedback" id="invalid-phone-number">
+              Please enter only 10 digits.
+            </div>
+            <div class="valid-feedback" id="valid-phone-number">
+              Looks good!
+            </div>
+  
+  
+  
+          </div>
+        </div>
+
+      </div>
+      
+
+<div class="row mt-4" id="font-check">
+  <div class="col-md-6 col-sm-6 col-6">
+    <!-- <label for="valid-password" class="form-label">Password</label> -->
+    <input type="password" class="form-control" id="password" autocomplete="off" placeholder="Password">
+    <div class="invalid-feedback">
+      Please provide the password
+    </div>
+  </div>
+  <div class="col-md-6 col-sm-6 col-6">
+    <!-- <label for="valid-confirm" class="form-label">Confirm Password</label> -->
+    <input type="password" class="form-control" id="confirm-password" autocomplete="off" oninput="check_Confirm_password()" placeholder="Confirm Password">
+    <div class="invalid-feedback" id="invalid-confirm">
+      Password and Confirm password did not match....
+    </div>
+  </div>
+</div>
+    
+
+
+      <div class="col-12 mt-4" id="font-check">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="tnc" autocomplete="off" onclick="check_tnc()">
+          <label class="form-check-label" for="tnc">
+            Agree to terms and conditions
+          </label>
+          <div class="invalid-feedback" id="tnc-invalid">
+            You must agree before submitting.
+          </div>
+          <div class="valid-feedback " id="tnc-valid">
+            Looks good!
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 button-style signup-button">
+        <button class="btn btn-dark" type="button" onclick="signup()">Sign Up</button>
+      </div>
+    </form>
+
+    <!-------------------------------------------Login Form----------------------------------------->
+    
+    <form class="login-form col-md-6" id="login-form">
+      <div class="buttonss">
+        <button type="button" onclick="signup_show()" id="button-toggle-sign">Signup</button>
+        <button type="button" onclick="login_show()" id="button-toggle-log">Login</button>
+      </div>
+      <h2 class="login-title">Log In</h2>
+
+      <div class="alert alert-success alert-dismissible fade show col-md-8" role="alert" id="login-success">
+        Access Granted!
+         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="alert alert-danger alert-dismissible fade show col-md-8" role="alert" id="login-unsuccess">
+        Access Denied
+         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+
+       <div class="row" id="login-check" >
+
+      <div class="mb-3 col-md-6" id="font-check-log">
+        <label for="InputEmail" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3 col-md-6" id="font-check-log">
+        <label for="InputPassword" class="form-label">Password</label>
+        <input type="password" class="form-control" id="InputPassword">
+      </div>
+       </div>
+      <div class="button-style">
+        <button type="button" class="btn btn-dark" onclick="login()">Log In</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- </div> -->
+  <img src="./foot.jpg" style="width:100%">
+
+  <!---------------------------------------------Footer------------------------------------->
+
+  <script src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+   
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
